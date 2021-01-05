@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    div
+        h2 登入頁面
+        form(method="post")
+            label(for="email") E-Mail：
+            input#email(type="email", name="email", value="leonjye@ntub.edu.tw")
+            br
+            label(for="password") 密碼：
+            input#password(type="password", name="password", value="test123")
+            br
+            input(type="submit", value="送出")

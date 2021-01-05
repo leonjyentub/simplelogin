@@ -1,0 +1,14 @@
+extends layout
+
+block content
+    div
+        h3 你好 #{user.email}
+        h2 發文
+        form(method="post")
+            label(for="title") 標題：
+            input#title(type="text", name="title")
+            br
+            label(for="content") 內文：
+            textarea#content(name="content", cols="30", rows="10")
+            br
+            input(type="submit", value="送出")

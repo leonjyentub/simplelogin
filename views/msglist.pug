@@ -1,0 +1,21 @@
+extends layout
+
+
+block content
+    //- m.id, m.title, m.content, m.author, u.email, m.lastupdatedtime
+    div 
+        each row in rows
+            dl
+                dt 標題
+                dd= row.title
+                dt 內文
+                dd= row.content
+                dt 作者
+                dd= row.email
+                dt
+                dd
+                    if row.author == author
+                        a(href='/msg/edit/' + row.id) 編輯
+                        br
+                        a(href='/msg/del/' + row.id) 刪除
+            

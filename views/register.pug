@@ -1,0 +1,17 @@
+extends layout
+
+block content
+    div
+        h2 帳號註冊頁面
+        form(method="post")
+            label(for=email) E-Mail：
+            input#email(type="email", name="email")
+            br
+            label(for="password") 密碼：
+            input#password(type="password", name="password")
+            br
+            label(for="confirmedpassword") 確認密碼：
+            input#confirmedpassword(type="password", name="confirmedpassword")
+            br
+            input(type="submit", value="送出")
+        
